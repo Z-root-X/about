@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog - Zihad Hasan</title>
+    <!-- Google Fonts (Roboto for English, Hind Siliguri for Bangla) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Hind+Siliguri:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section (Same as index.html for consistency) -->
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" id="logo">Zihad Hasan</a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li> 
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Blog Listing -->
+    <main>
+        <section id="blog-listing" class="content-section">
+            <div class="container">
+                <h2 class="section-title">My Thoughts & Articles</h2>
+                <div id="blog-posts-container" class="grid-container">
+                    <!-- Blog posts will be loaded here by JavaScript -->
+                    <p class="loading-message">Loading blog posts...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Same as index.html for consistency) -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Zihad Hasan. All Rights Reserved.</p>
+            <p>Designed with <span class="heart">❤️</span> and Coded with Passion. Profound thanks to my teacher, Nasif Muhammad, for his inspiration and support.</p>
+        </div>
+    </footer>
+
+    <!-- Global API URL -->
+    <script>
+        // IMPORTANT: Replace this with your actual Google Apps Script Web App URL
+        const GOOGLE_SHEET_API_BASE_URL = 'https://script.google.com/macros/s/AKfycbydkFbKZecSOaeAxkVbneusu-sVHLYXQJZLPJAyQLDEHnmKutjn3zzAcLzrhKgY5ebiXQ/exec';
+    </script>
+
+    <!-- JavaScript Files -->
+    <script src="js/common.js"></script>
+    <script src="js/blog-list.js"></script>
+</body>
+</html>

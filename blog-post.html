@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Title - Zihad Hasan</title> <!-- Will be updated by JS -->
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+    <!-- Header Section (Same as other pages) -->
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" id="logo">Zihad Hasan</a>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="blog.html" class="nav-link active">Blog</a></li> 
+                    <li><a href="index.html#projects" class="nav-link">Projects</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Area - Single Blog Post -->
+    <main>
+        <section id="single-post-section" class="content-section">
+            <div class="container article-container"> 
+                <article id="blog-post-area">
+                    <h1 id="blog-post-title" class="post-title">Loading post title...</h1>
+                    <div class="post-meta">
+                        <span class="post-date">Published on: <span id="blog-post-date-published"></span></span>
+                        <!-- Optional: <span class="post-author">By: <span id="blog-post-author-name"></span></span> -->
+                    </div>
+                    
+                    <!-- Optional: Featured Image for the blog post -->
+                    <div class="post-featured-image-container">
+                        <img src="" alt="Blog post featured image" id="blog-post-image" style="display: none;">
+                    </div>
+
+                    <div id="blog-post-content" class="post-content">
+                        <!-- Full blog post content (in Bangla) will be loaded here -->
+                        <p class="loading-message">Loading post content...</p>
+                    </div>
+
+                    <div class="back-to-blog-link-container">
+                        <a href="blog.html" class="btn btn-secondary">← Back to All Posts</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section (Same as other pages) -->
+    <footer id="main-footer">
+        <div class="container">
+            <p>© <span id="current-year"></span> Zihad Hasan. All Rights Reserved.</p>
+            <p>Designed with <span class="heart">❤️</span> and Coded with Passion. Profound thanks to my teacher, Nasif Muhammad, for his inspiration and support.</p>
+        </div>
+    </footer>
+
+    <!-- Global API URL -->
+    <script>
+        // IMPORTANT: Replace this with your actual Google Apps Script Web App URL
+        const GOOGLE_SHEET_API_BASE_URL = 'https://script.google.com/macros/s/AKfycbydkFbKZecSOaeAxkVbneusu-sVHLYXQJZLPJAyQLDEHnmKutjn3zzAcLzrhKgY5ebiXQ/exec';
+    </script>
+
+    <!-- JavaScript Files -->
+    <script src="js/common.js"></script>
+    <script src="js/blog-post.js"></script>
+</body>
+</html>
