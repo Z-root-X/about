@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Post Title - Zihad Hasan</title> <!-- Will be updated by JS -->
-    <!-- Google Fonts -->
+    <!-- Google Fonts (Roboto for English, Noto Serif Bengali for Bangla) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Noto+Serif+Bengali:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
@@ -17,7 +17,10 @@
     <!-- Header Section (Same as other pages) -->
     <header id="main-header">
         <div class="container">
-            <a href="index.html" id="logo">Zihad Hasan</a>
+            <a href="index.html" id="logo">
+                 <!-- Optional: <img src="images/profile.png" alt="Logo" class="header-logo-profile-pic"> -->
+                Zihad Hasan
+            </a>
             <nav id="main-nav">
                 <ul>
                     <li><a href="index.html" class="nav-link">Home</a></li>
@@ -25,7 +28,7 @@
                     <li><a href="index.html#projects" class="nav-link">Projects</a></li>
                     <li><a href="index.html#contact" class="nav-link">Contact</a></li>
                 </ul>
-                <button id="mobile-menu-toggle" aria-label="Toggle Menu">
+                <button id="mobile-menu-toggle" aria-label="Toggle Menu" aria-expanded="false">
                     <span></span><span></span><span></span>
                 </button>
             </nav>
@@ -35,17 +38,16 @@
     <!-- Main Content Area - Single Blog Post -->
     <main>
         <section id="single-post-section" class="content-section">
-            <div class="container article-container"> 
+            <div class="container article-container">
                 <article id="blog-post-area">
                     <h1 id="blog-post-title" class="post-title">Loading post title...</h1>
                     <div class="post-meta">
                         <span class="post-date">Published on: <span id="blog-post-date-published"></span></span>
-                        <!-- Optional: <span class="post-author">By: <span id="blog-post-author-name"></span></span> -->
+                        <!-- Optional: <span class="post-author-container">By: <span id="blog-post-author-name"></span></span> -->
                     </div>
                     
-                    <!-- Optional: Featured Image for the blog post -->
-                    <div class="post-featured-image-container">
-                        <img src="" alt="Blog post featured image" id="blog-post-image" style="display: none;">
+                    <div class="post-featured-image-container" style="display: none;"> 
+                        <img src="" alt="Blog post featured image" id="blog-post-image" style="display: none;"> 
                     </div>
 
                     <div id="blog-post-content" class="post-content">
